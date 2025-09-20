@@ -47,7 +47,11 @@ app.use(limiter);
 
 // CORS configuration
 app.use(cors({
-  origin: ['http://localhost:3000', 'http://localhost:5173'], // React dev servers
+  origin: [
+    'http://localhost:3000',
+    'http://localhost:8000',
+    'http://localhost:5173',
+  ], // React dev servers
   credentials: true
 }));
 
